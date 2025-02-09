@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "warehouse-management"
+version = "0.1.0"
+description = ""
+authors = ["Vadim Vikhrachev <vikhrachev@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+black = "^24.10.0"
+pytest = "^8.3.4"
+flake8 = "^7.1.1"
+isort = "^5.13.2"
+mypy = "^1.14.1"
+sqlalchemy = "^2.0.37"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
