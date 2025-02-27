@@ -16,9 +16,7 @@ def main():
     session = SessionFactory()
     product_repo = SqlAlchemyProductRepository(session)
     order_repo = SqlAlchemyOrderRepository(session)
-
     uow = SqlAlchemyUnitOfWork(session)
-
     warehouse_service = WarehouseService(product_repo, order_repo)
 
     with uow:
